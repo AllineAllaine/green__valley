@@ -1,3 +1,59 @@
-.page-header {
-	color:red;
+.page-header  {
+
+
+     border-bottom: 1px solid @gray-lighten;
+     padding: 10px 0;
+     
+
+       &__inner { 
+          display:flex; 
+          justify-content:space-between;
+          flex-wrap:wrap;
+          margin-right: auto;
+          margin-left: auto;
+          align-items: center;
+          padding-left: 20px;
+          padding-right: 20px;
 }
+    
+    &__contacts {
+      display:block;
+      @media screen and (max-width: @screen-lg){
+        display:none;
+      }
+    }
+
+      &__contacts a {
+
+		text-decoration: none;
+		color:@gray-darkest;
+		font-size: @text-size-bg;
+    font-family: @font-family-third;
+    font-weight: bold;
+
+	}
+
+	 &__contacts p {
+		color:@gray-darkest;
+		font-size: @text-size-sm;
+    font-family: @font-family;
+	}
+
+  &__btn {
+    display: block;
+    @media screen and (max-width: @screen-lg) {
+      display:none;
+    }
+  }
+
+
+}
+
+
+
+
+
+
+
+
+

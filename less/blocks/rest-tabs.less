@@ -1,0 +1,95 @@
+@media screen and (max-width: @screen-sm) { //до 768//
+.rest-tabs__bottom-list {display:none;}
+}
+@media screen and (max-width: @screen-lg) { //до 1200//
+		}
+
+@media screen and (min-width: @screen-lg) { //от1200//
+  
+}
+
+.rest-tabs{
+
+    &__switcher {
+
+     list-style: none;
+
+      & li {
+
+        display:inline-block;
+     }
+
+	  & a {
+	  text-decoration: none;
+	  text-transform: uppercase;
+	  color: @gray-tabs;
+      font-size: @text-size-sm;
+      font-family: @font-family;
+      font-weight: 400;
+      line-height: 72px;
+      }
+
+      &:selected {
+    	color:@color-primary;
+
+      }
+    }
+
+
+     &__bottom-list {
+
+    list-style: none;
+    }
+
+    &__bottom-list-item {
+
+     font-size: @text-size-sm;
+    font-family: @font-family;
+
+    }
+
+    &__top-title{
+
+    color: #000000;
+    font-size: @text-size-h1;
+    font-family: @font-family-second;
+
+    
+    }
+
+    &__top-description {
+
+    color: #000000;
+    font-size: @text-size-bg;
+    font-family: @font-family;
+    }
+
+
+
+         &__bottom-title{
+
+	color: #000000;
+    font-size: @text-size-h2;
+    font-family: @font-family-second;
+
+}
+
+    &__bottom-description {
+
+    	color: #000000;
+        font-size: @text-size;
+        font-family: @font-family;
+    }
+
+
+    &__top-item {
+
+        background: url("../../img/tabs-top.png") no-repeat 0 0;
+        width:1200px;
+        height:100%;
+
+    }
+
+   
+
+}

@@ -1,0 +1,50 @@
+.main-nav{
+
+
+    @media screen and (max-width: @screen-lg) { //до 1200//
+     display:none;
+    }
+  
+
+    &__item{
+    display: inline-block;
+    text-transform: uppercase;
+    padding-right: 10px;
+
+    }
+
+    &__list {
+    padding: 0;
+    list-style: none;
+    }
+
+  &__item a {
+    text-decoration: none;
+    color: @gray-darkest;
+    font-size: @text-size-sm;
+    font-family: @font-family;
+    font-weight: 500;
+    line-height: 72px;
+  }
+
+  &__item a:hover {
+    color: @color-primary;
+  }
+
+  &__burger {
+    background: url(../../img/burger.png) no-repeat 0 0;
+    width: 30px;
+    height:20px;
+    @media screen and (min-width: @screen-lg) { //от1200//
+    display: none;
+       }
+  }
+}
+
+
+
+
+@media screen and (min-width: @screen-lg) { //от1200//
+  .main-nav__burger {display: none; }
+
+}

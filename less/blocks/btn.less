@@ -1,68 +1,87 @@
 
   
- .btn {
+ .btn   {
 
   background: @color-primary;
-  border-radius: 14px;
+  border-radius: 70px;
   font-family: @font-family;
   color: @color-white;
   font-size:@text-size-sm;
-  padding: 14px 32px 14px 31px;
+  line-height:18px;
+  font-weight:500;
   text-decoration: none;
+  box-sizing: border-box;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 10px 30px;
+  display: inline-block;
+  border: none;
+  outline: none;
 
-     &:hover {
+          &:hover {
 
-  background: @color-primary--hover;
+      background: @color-primary--hover;
 
-    }
+      }
 
-}
 
- 
-.btn--icon-calendar {
-
- .btn
-
-  //background-image: url() 0 0 no-repeat;//
-
-     &:hover {
-
-  background: @color-primary--hover;
-
-}
-
-}
-  .btn--green {
+    &--green {
     
-  background: @color-secondary;
-  font-family: @font-family;
-  color: @color-white;
-  font-size:@text-size-sm;
-  padding: 20px 32px 20px 31px;
-  text-decoration: none;
+     background: @color-secondary;
+     color: @color-white;
+     padding: 20px 30px 20px 30px;
+     text-decoration: none;
+     border-radius: 0;
 
-    &:hover {
+       &:hover {
 
       background:@color-secondary--hover;
-    }
+        }
     
-  }
+    }
 
-  .btn--white-bordered {
+
+
+     &--white-bordered {
       
-  border-radius: 14px;
-  font-family: @font-family;
-  color: @color-white;
-  font-size:@text-size-sm;
-  padding: 10px 28px 10px 26px;
-  text-decoration: none;
-  border: 2px solid white;
+     color: @color-white;
+     background-color: #15b598;
+     padding: 10px 28px 10px 26px;
+     text-decoration: none;
+     border: 2px solid white;
 
-     &:hover {
+         &:hover {
 
-      background: @color-white;
-      color: @color-secondary; 
+         background: @color-white;
+         color: #15b598; 
+
+        }
 
     }
 
- }
+}
+
+.btn--icon-calendar {
+    padding-left: 20px;
+    padding-right: 20px;
+
+    span {
+
+      background-image: url('../../img/calendar.png');
+      width: 16px;
+      height: 16px;
+      display: inline-block;
+      
+    }
+}
+
+
+
+
+ 
+
+  
+
+  
+ 
+

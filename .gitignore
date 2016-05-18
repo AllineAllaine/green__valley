@@ -1,3 +1,4 @@
 *.png
 *.psd
 *.txt
+node_modules/
