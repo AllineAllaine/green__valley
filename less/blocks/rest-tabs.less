@@ -1,5 +1,8 @@
 
-
+body {
+	max-width:1200px;
+	margin: auto;
+}
 
 .rest-tabs{
 
@@ -13,6 +16,7 @@
 
      list-style: none;
      display: inline-flex;
+     order:2;
 
       & li {
 
@@ -38,6 +42,7 @@
     &__tabs-top {
       display: flex;
       width: 100%;
+      order:1;
     }
 
     &__top-item {
@@ -81,6 +86,10 @@
      line-height: 24px;
     }
 
+    &__tabs-bottom {
+      order:3;
+    }
+
 
      &__bottom-list {
 
@@ -89,22 +98,23 @@
     flex-wrap:wrap;
     justify-content:space-between;
     max-width: 865px;
+    margin-left: 210px;
+    margin-right: 210px;
     }
 
     &__bottom-list-item {
 
     display:inline-flex;
-    //flex-direction:column;
     flex-wrap:wrap;
      font-size: @text-size-sm;
      font-family: @font-family;
-     line-height: 72px;
+     line-height: 18px;
      font-weight: 500;
      margin:0;
      text-align: center;
      text-transform: uppercase;
      max-width:95px;
-     word-wrap:break-word;
+     
 
     }
 
@@ -122,6 +132,7 @@
 
     &__bottom-item {
 
+    
     }
 
 
@@ -131,6 +142,8 @@
     background-repeat: no-repeat;
     background-size: contain; 
     min-height: 450px;
+    padding-top: 40px;
+
 
     }
 

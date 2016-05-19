@@ -54,7 +54,7 @@
 }
 .page-header {
   border-bottom: 1px solid #ebebeb;
-  padding: 10px 0;
+  padding: 20px 60px;
   max-width: 1200px;
 }
 .page-header__inner {
@@ -95,6 +95,20 @@
     display: none;
   }
 }
+.page-footer {
+  display: flex;
+  justify-content: space-around;
+}
+.page-footer__address {
+  font-family: 'Fira Sans', sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+}
+.page-footer__contacts {
+  font-family: 'Fira Sans', sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+}
 @media screen and (max-width: 768px) {
   .page-footer__address {
     display: none;
@@ -106,6 +120,9 @@
 @media screen and (max-width: 1200px) {
 }
 @media screen and (min-width: 1200px) {
+}
+.social {
+  list-style: none;
 }
 @media screen and (max-width: 1200px) {
   .main-nav {
@@ -147,6 +164,10 @@
     display: none;
   }
 }
+body {
+  max-width: 1200px;
+  margin: auto;
+}
 .rest-tabs {
   display: flex;
   flex-wrap: wrap;
@@ -157,6 +178,7 @@
 .rest-tabs__switcher {
   list-style: none;
   display: inline-flex;
+  order: 2;
 }
 .rest-tabs__switcher li {
   display: inline-block;
@@ -176,6 +198,7 @@
 .rest-tabs__tabs-top {
   display: flex;
   width: 100%;
+  order: 1;
 }
 .rest-tabs__top-item {
   display: block;
@@ -203,25 +226,29 @@
   font-family: 'Fira Sans', sans-serif;
   line-height: 24px;
 }
+.rest-tabs__tabs-bottom {
+  order: 3;
+}
 .rest-tabs__bottom-list {
   list-style: none;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   max-width: 865px;
+  margin-left: 210px;
+  margin-right: 210px;
 }
 .rest-tabs__bottom-list-item {
   display: inline-flex;
   flex-wrap: wrap;
   font-size: 14px;
   font-family: 'Fira Sans', sans-serif;
-  line-height: 72px;
+  line-height: 18px;
   font-weight: 500;
   margin: 0;
   text-align: center;
   text-transform: uppercase;
   max-width: 95px;
-  word-wrap: break-word;
 }
 .rest-tabs__bottom-list-item img {
   height: 80px;
@@ -234,6 +261,7 @@
   background-repeat: no-repeat;
   background-size: contain;
   min-height: 450px;
+  padding-top: 40px;
 }
 .rest-tabs__bottom-title {
   color: #000000;
@@ -285,8 +313,13 @@
   margin-left: auto;
   margin-right: auto;
   padding: 0;
-  flex-wrap: wrap;
   align-items: center;
+  flex-wrap: wrap;
+}
+@media and (min-width: 768px) {
+  .choose-rest__inner {
+    flex-wrap: nowrap;
+  }
 }
 .choose-rest h1 {
   color: white;
@@ -348,4 +381,9 @@
   color: #191919;
   font-family: 'Fira Sans', sans-serif;
   font-size: 16px;
+}
+.reviews {
+  background-image: url("../../img/background-reviews.png");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
