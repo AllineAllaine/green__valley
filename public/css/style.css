@@ -55,6 +55,7 @@
 .page-header {
   border-bottom: 1px solid #ebebeb;
   padding: 10px 0;
+  max-width: 1200px;
 }
 .page-header__inner {
   display: flex;
@@ -182,14 +183,14 @@
   color: #1c1c1c;
   font-size: 36px;
   font-family: 'PT Serif Caption', serif;
-  background-color: white;
   line-height: 42px;
+  text-align: left;
+  font-weight: 400;
 }
 .rest-tabs__top-description {
   color: #1c1c1c;
   font-size: 18px;
   font-family: 'Fira Sans', sans-serif;
-  background-color: white;
   line-height: 24px;
 }
 .rest-tabs__bottom-title {
@@ -214,6 +215,10 @@
   min-height: 320px;
   min-width: 1200px;
 }
+.rest-tabs__top-item-inner {
+  margin-left: 20px;
+  margin-top: 20px;
+}
 .location__transport {
   display: flex;
 }
@@ -237,10 +242,67 @@
 @media screen and (min-width: 1200px) {
 }
 .choose-rest {
+  background-image: url("../../img/background-rest-place.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 10px;
+  min-height: 500px;
+  max-width: 1200px;
+}
+.choose-rest__inner {
   display: flex;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.choose-rest h1 {
+  color: white;
+  font-family: 'PT Serif Caption', serif;
+  font-size: 30px;
+  font-weight: 500;
+  text-align: center;
+  vertical-align: middle;
+}
+.choose-rest__desc {
+  background: white;
+  margin: 0;
+  height: 136px;
+  min-width: 280px;
+}
+.choose-rest__img {
+  margin: 0;
+  min-width: 280px;
+  height: 200px;
+}
+.choose-rest__place {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  text-decoration: none;
+  color: #191919;
+  text-align: center;
+}
+.choose-rest__title {
+  font-family: 'PT Serif', serif;
+  font-size: 26px;
+  line-height: 19px;
+  vertical-align: middle;
 }
 .choose-rest__place-inner {
-  background-image: url("../../img/background-rest-place");
+  margin: 10px;
+}
+.price {
+  font-family: 'Fira Sans', sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 500;
+  vertical-align: middle;
+}
+.price span {
+  color: #ff7435;
 }
 .offers__title {
   color: #000000;
