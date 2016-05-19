@@ -152,6 +152,7 @@
   flex-wrap: wrap;
   margin: 0;
   padding: 0;
+  max-width: 1200px;
 }
 .rest-tabs__switcher {
   list-style: none;
@@ -172,37 +173,6 @@
 .rest-tabs__switcher:selected {
   color: #ff7435;
 }
-.rest-tabs__bottom-list {
-  list-style: none;
-}
-.rest-tabs__bottom-list-item {
-  font-size: 14px;
-  font-family: 'Fira Sans', sans-serif;
-}
-.rest-tabs__top-title {
-  color: #1c1c1c;
-  font-size: 36px;
-  font-family: 'PT Serif Caption', serif;
-  line-height: 42px;
-  text-align: left;
-  font-weight: 400;
-}
-.rest-tabs__top-description {
-  color: #1c1c1c;
-  font-size: 18px;
-  font-family: 'Fira Sans', sans-serif;
-  line-height: 24px;
-}
-.rest-tabs__bottom-title {
-  color: #000000;
-  font-size: 30px;
-  font-family: 'PT Serif Caption', serif;
-}
-.rest-tabs__bottom-description {
-  color: #000000;
-  font-size: 16px;
-  font-family: 'Fira Sans', sans-serif;
-}
 .rest-tabs__tabs-top {
   display: flex;
   width: 100%;
@@ -218,6 +188,66 @@
 .rest-tabs__top-item-inner {
   margin-left: 20px;
   margin-top: 20px;
+}
+.rest-tabs__top-title {
+  color: #1c1c1c;
+  font-size: 36px;
+  font-family: 'PT Serif Caption', serif;
+  line-height: 42px;
+  text-align: left;
+  font-weight: 400;
+}
+.rest-tabs__top-description {
+  color: #1c1c1c;
+  font-size: 18px;
+  font-family: 'Fira Sans', sans-serif;
+  line-height: 24px;
+}
+.rest-tabs__bottom-list {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 865px;
+}
+.rest-tabs__bottom-list-item {
+  display: inline-flex;
+  flex-wrap: wrap;
+  font-size: 14px;
+  font-family: 'Fira Sans', sans-serif;
+  line-height: 72px;
+  font-weight: 500;
+  margin: 0;
+  text-align: center;
+  text-transform: uppercase;
+  max-width: 95px;
+  word-wrap: break-word;
+}
+.rest-tabs__bottom-list-item img {
+  height: 80px;
+  width: 80px;
+  border-radius: 50%;
+  margin-bottom: 15px;
+}
+.rest-tabs__bottom-item-inner {
+  background-image: url("../../img/background-tabs-bottom.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  min-height: 450px;
+}
+.rest-tabs__bottom-title {
+  color: #000000;
+  font-size: 30px;
+  font-family: 'PT Serif Caption', serif;
+  text-align: center;
+}
+.rest-tabs__bottom-description {
+  color: #000000;
+  font-size: 16px;
+  font-family: 'Fira Sans', sans-serif;
+  line-height: 22px;
+  font-weight: 500;
+  text-align: center;
 }
 .location__transport {
   display: flex;

@@ -7,6 +7,7 @@
   flex-wrap:wrap;
   margin:0;
   padding:0;
+  max-width: 1200px;
 
     &__switcher {
 
@@ -34,59 +35,6 @@
       }
     }
 
-
-     &__bottom-list {
-
-    list-style: none;
-    }
-
-    &__bottom-list-item {
-
-     font-size: @text-size-sm;
-    font-family: @font-family;
-
-    }
-
-    &__top-title{
-
-    color: #1c1c1c;
-    font-size: @text-size-h1;
-    font-family: @font-family-second;
-    line-height: 42px;
-    text-align: left;
-    font-weight: 400;
-
-
-    
-    }
-
-    &__top-description {
-
-    color: #1c1c1c;
-    font-size: @text-size-bg;
-    font-family: @font-family;
-     line-height: 24px;
-    }
-
-
-
-         &__bottom-title{
-
-	   color: #000000;
-    font-size: @text-size-h2;
-    font-family: @font-family-second;
-
-
-}
-
-    &__bottom-description {
-
-    	  color: #000000;
-        font-size: @text-size;
-        font-family: @font-family;
-    }
-
-
     &__tabs-top {
       display: flex;
       width: 100%;
@@ -111,6 +59,107 @@
       margin-left: 20px;
       margin-top:20px;
     }
+
+     &__top-title{
+
+    color: #1c1c1c;
+    font-size: @text-size-h1;
+    font-family: @font-family-second;
+    line-height: 42px;
+    text-align: left;
+    font-weight: 400;
+
+
+    
+    }
+
+    &__top-description {
+
+    color: #1c1c1c;
+    font-size: @text-size-bg;
+    font-family: @font-family;
+     line-height: 24px;
+    }
+
+
+     &__bottom-list {
+
+    list-style: none;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:space-between;
+    max-width: 865px;
+    }
+
+    &__bottom-list-item {
+
+    display:inline-flex;
+    //flex-direction:column;
+    flex-wrap:wrap;
+     font-size: @text-size-sm;
+     font-family: @font-family;
+     line-height: 72px;
+     font-weight: 500;
+     margin:0;
+     text-align: center;
+     text-transform: uppercase;
+     max-width:95px;
+     word-wrap:break-word;
+
+    }
+
+    &__bottom-list-item img {
+
+        height: 80px;
+        width: 80px;
+        border-radius: 50%;
+        margin-bottom: 15px;
+        
+
+    }
+
+   
+
+    &__bottom-item {
+
+    }
+
+
+    &__bottom-item-inner{
+
+    background-image: url("../../img/background-tabs-bottom.png");
+    background-repeat: no-repeat;
+    background-size: contain; 
+    min-height: 450px;
+
+    }
+
+    
+
+
+
+    &__bottom-title{
+
+	   color: #000000;
+    font-size: @text-size-h2;
+    font-family: @font-family-second;
+    text-align: center;
+
+
+}
+
+    &__bottom-description {
+
+    	  color: #000000;
+        font-size: @text-size;
+        font-family: @font-family;
+        line-height: 22px;
+        font-weight: 500;
+        text-align: center;
+    }
+
+
+    
 
    
 
