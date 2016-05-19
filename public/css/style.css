@@ -2,6 +2,10 @@
 @import url(https://fonts.googleapis.com/css?family=PT+Serif+Caption&subset=cyrillic);
 @import url(https://fonts.googleapis.com/css?family=PT+Serif&subset=cyrillic);
 @import url(https://fonts.googleapis.com/css?family=PT+Sans+Caption:400,700&subset=cyrillic);
+body {
+  max-width: 1200px;
+  margin: auto;
+}
 .btn {
   background: #ff7435;
   border-radius: 70px;
@@ -164,20 +168,16 @@
     display: none;
   }
 }
-body {
-  max-width: 1200px;
-  margin: auto;
-}
 .rest-tabs {
   display: flex;
   flex-wrap: wrap;
   margin: 0;
   padding: 0;
   max-width: 1200px;
+  justify-content: center;
 }
 .rest-tabs__switcher {
   list-style: none;
-  display: inline-flex;
   order: 2;
 }
 .rest-tabs__switcher li {
@@ -209,8 +209,10 @@ body {
   min-width: 1200px;
 }
 .rest-tabs__top-item-inner {
-  margin-left: 20px;
-  margin-top: 20px;
+  margin-left: 90px;
+  margin-top: 75px;
+  max-width: 590px;
+  background-color: ;
 }
 .rest-tabs__top-title {
   color: #1c1c1c;
@@ -219,12 +221,17 @@ body {
   line-height: 42px;
   text-align: left;
   font-weight: 400;
+  background-color: #fffffe;
+  display: inline-flex;
 }
 .rest-tabs__top-description {
   color: #1c1c1c;
   font-size: 18px;
   font-family: 'Fira Sans', sans-serif;
   line-height: 24px;
+  text-align: left;
+  background-color: #fffffe;
+  display: inline-flex;
 }
 .rest-tabs__tabs-bottom {
   order: 3;
@@ -386,4 +393,51 @@ body {
   background-image: url("../../img/background-reviews.png");
   background-repeat: no-repeat;
   background-size: cover;
+}
+.booking-form__main-title {
+  font-family: 'PT Sans Caption', sans-serif;
+  font-size: 30px;
+  text-align: center;
+  color: #000000;
+}
+.booking-form__title {
+  font-family: 'PT Serif', serif;
+  font-size: 26px;
+  line-height: 19px;
+  color: #191919;
+  text-align: center;
+}
+.booking-form__desc {
+  font-family: 'Fira Sans', sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  color: #000000;
+  text-align: center;
+}
+.booking-form__desc span {
+  color: #ff7435;
+}
+.booking-form__date {
+  font-family: 'Fira Sans', sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  color: #4c4c4c;
+  text-align: center;
+  text-transform: uppercase;
+}
+.booking-form__date-rest {
+  background-color: #f1f1f1;
+}
+.booking-form__inner-date {
+  background-color: white;
+  display: flex;
+}
+.step-form {
+  font-family: 'Fira Sans', sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 500;
+  color: #929292;
+  text-align: center;
+  text-transform: uppercase;
 }

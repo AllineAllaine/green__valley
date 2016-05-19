@@ -9,7 +9,7 @@
 <body>
   <header class="page-header">
     <div class="page-header__inner">
-      <a href="/" class="logo"><img src="" alt="">
+      <a href="/" class="logo"><img src="../img/logo.png" alt="">
       </a>
       <nav class="main-nav">
         <ul class="main-nav__list">
@@ -28,10 +28,10 @@
       <a  href="" class="btn  btn--icon-calendar" >Забронировать</a>
     </div>
   </header>
-  <main class="page-header">
+  <main class="page-main">
     <section class="booking">
       <form class="booking-form">
-        <h1 class="booking-form__title">Бронирование</h1>
+        <h1 class="booking-form__main-title">Бронирование</h1>
         <p class="booking-form__desc">Чтобы забронировать номер в отеле или коттедж, заполните форму ниже или просто позвоните
          по телефону: <span>+7 812 777-55-88</span> 
 	      </p>
@@ -39,16 +39,20 @@
 	        <div class="booking-form__inner">
 		          <p class="step-form">Шаг 1</p>
 		          <h3 class="booking-form__title">Дата отдыха</h3>
-		          <label class="booking-form__date-entry" for="date-entry">Дата въезда
-              </label>
-		          <input type="text" id="date-entry" placeholder="ДД"></input>
-		          <input type="text" id="date-entry" placeholder="ММ"></input>
-		          <input type="text" id="date-entry" placeholder="ГГГГ"></input>	
-              <label class="booking-form__date-exit" for="date-exit">Дата выезда
-              </label>
-		          <input type="text" id="date-exit" placeholder="ДД"></input>
-		          <input type="text" id="date-exit" placeholder="ММ"></input>
-		          <input type="text" id="date-exit" placeholder="ГГГГ"></input>	
+		          <div class="booking-form__inner-date">
+                <label class="booking-form__date" for="date-entry">Дата въезда
+                </label>
+		            <input type="text" id="date-entry" placeholder="ДД"></input>
+		            <input type="text" id="date-entry" placeholder="ММ"></input>
+		            <input type="text" id="date-entry" placeholder="ГГГГ"></input>	
+              </div>
+              <div class="booking-form__inner-date">
+                <label class="booking-form__date" for="date-exit">Дата выезда
+                </label>
+		            <input type="text" id="date-exit" placeholder="ДД"></input>
+		            <input type="text" id="date-exit" placeholder="ММ"></input>
+		            <input type="text" id="date-exit" placeholder="ГГГГ"></input>
+              </div>
           </div>
         </section>	
         <section class="booking-form__place-type">
@@ -139,7 +143,7 @@
       Приморское ш.600
       </p>
     </div>
-    <a href="/" class="logo"><img src="" alt="">
+    <a href="/" class="logo"><img src="../img/logo.png" alt="">
     </a>
     <ul class="social">
       <li class="social__vk"><a href=""></a></li>
