@@ -101,29 +101,29 @@ body {
 }
 .page-footer {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
 }
 .page-footer__address {
   font-family: 'Fira Sans', sans-serif;
   font-size: 14px;
   line-height: 18px;
-}
-.page-footer__contacts {
-  font-family: 'Fira Sans', sans-serif;
-  font-size: 14px;
-  line-height: 18px;
+  padding-right: 200px;
 }
 @media screen and (max-width: 768px) {
   .page-footer__address {
     display: none;
   }
+}
+.page-footer__contacts {
+  font-family: 'Fira Sans', sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  padding-left: 300px;
+}
+@media screen and (max-width: 768px) {
   .page-footer__contacts {
     display: none;
   }
-}
-@media screen and (max-width: 1200px) {
-}
-@media screen and (min-width: 1200px) {
 }
 .social {
   list-style: none;
@@ -393,6 +393,19 @@ body {
   background-image: url("../../img/background-reviews.png");
   background-repeat: no-repeat;
   background-size: cover;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.reviews__title {
+  font-family: 'PT Serif Caption', serif;
+  font-size: 30px;
+  vertical-align: middle;
+  color: white;
+  font-weight: 400;
+}
+.reviews__item {
+  background-color: white;
 }
 .booking-form__main-title {
   font-family: 'PT Sans Caption', sans-serif;
