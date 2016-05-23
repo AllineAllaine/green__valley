@@ -25,8 +25,8 @@
   align-items: center;
   flex-wrap:wrap;
 
-  @media and (min-width: @screen-sm) { //от 768
-    flex-wrap:nowrap;
+  @media and (max-width: @screen-lg) { 
+    flex-wrap:wrap;
   }
 
     }
@@ -80,14 +80,3 @@
 
 
 
-.price {
-	font-family: @font-family;
-    font-size: @text-size; 
-    line-height: 24px;
-    font-weight: 500;
-    vertical-align: middle;
-
-    & span {
-    	color:@color-primary;
-    }
-}

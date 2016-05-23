@@ -306,29 +306,48 @@ a {
 .location__transport {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
 }
 .location__transport-item {
   max-width: 480px;
+  color: #191919;
+  font-family: 'Fira Sans', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.location__transport-item ul {
+  list-style: none;
 }
 .location__title {
   color: #191919;
   font-family: 'PT Serif Caption', serif;
   font-size: 30px;
   text-align: center;
+  font-weight: 400;
 }
 .location__transport-title {
   color: #191919;
   font-family: 'Fira Sans', sans-serif;
   font-size: 14px;
+  text-align: center;
+  font-weight: bold;
+}
+.location__transport--bus {
+  background-image: url("../../img/bus.png");
+  background-repeat: no-repeat;
+  width: 55px;
+  height: 30px;
+}
+.location__transport--train {
+  background-image: url("../../img/train.png");
+  background-repeat: no-repeat;
+  width: 60px;
+  height: 30px;
 }
 @media screen and (max-width: 768px) {
-}
-@media screen and (max-width: 1200px) {
-  .location__transport {
-    flex-wrap: wrap;
-  }
-}
-@media screen and (min-width: 1200px) {
 }
 .choose-rest {
   background-image: url("../../img/background-rest-place.png");
@@ -347,9 +366,9 @@ a {
   align-items: center;
   flex-wrap: wrap;
 }
-@media and (min-width: 768px) {
+@media and (max-width: 1200px) {
   .choose-rest__inner {
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
   }
 }
 .choose-rest h1 {
@@ -388,16 +407,6 @@ a {
 .choose-rest__place-inner {
   margin: 10px;
 }
-.price {
-  font-family: 'Fira Sans', sans-serif;
-  font-size: 16px;
-  line-height: 24px;
-  font-weight: 500;
-  vertical-align: middle;
-}
-.price span {
-  color: #ff7435;
-}
 .offers__title {
   color: #000000;
   font-family: 'PT Serif Caption', serif;
@@ -430,21 +439,25 @@ a {
 }
 .reviews__item {
   background-color: white;
+  margin: 10px;
+  max-width: 480px;
+  min-width: 320px;
 }
 .owl-prev {
-  background-image: url('../../img/prev-btn.png');
-  background-repeat: no-repeat;
-  background-size: cover;
+  border-bottom: 2px solid white;
+  border-left: 2px solid white;
   width: 20px;
-  height: 40px;
+  height: 20px;
+  transform: rotate(50deg);
   color: rgba(200, 54, 54, 0);
 }
 .owl-next {
-  background-image: url('../../img/next-btn.png');
-  background-repeat: no-repeat;
+  border-bottom: 2px solid white;
+  border-left: 2px solid white;
   width: 20px;
-  height: 40px;
-  position: absolute;
+  height: 20px;
+  transform: rotate(-130deg);
+  color: rgba(200, 54, 54, 0);
 }
 .booking-form__main-title {
   font-family: 'PT Sans Caption', sans-serif;
@@ -484,7 +497,20 @@ a {
   background-color: white;
   display: flex;
   flex-wrap: wrap;
-  flex-direction: column;
+  list-style: none;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+}
+.booking-form__inner-date input {
+  border: 1px solid #ebebeb;
+  width: 55px;
+  height: 48px;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: ;
+  color: ;
+  margin: 0;
 }
 .step-form {
   font-family: 'Fira Sans', sans-serif;
@@ -702,4 +728,46 @@ a {
 .owl-carousel .owl-video-frame {
   position: relative;
   z-index: 1;
+}
+.room-item {
+  background: #fafafa;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  margin-top: 10px;
+}
+@media and (min-width: 1200px) {
+  .room-item {
+    flex-direction: row-reverse;
+    flex-wrap: nowrap;
+  }
+}
+.room-item__img-inner {
+  max-width: 580px;
+  max-height: 300px;
+  background: #fafafa;
+}
+.room-item__title {
+  font-family: 'PT Serif', serif;
+  font-size: 26px;
+  line-height: 19px;
+  vertical-align: middle;
+  color: #191919;
+}
+.room-item__text {
+  font-family: 'Fira Sans', sans-serif;
+  font-size: 16px;
+  line-height: 22px;
+  vertical-align: middle;
+  color: #191919;
+}
+.price {
+  font-family: 'Fira Sans', sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 500;
+  vertical-align: middle;
+}
+.price span {
+  color: #ff7435;
 }

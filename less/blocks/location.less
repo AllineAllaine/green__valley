@@ -2,13 +2,24 @@
 
     &__transport {
   display:flex;
-
-flex-wrap:wrap;
+  flex-wrap:wrap;
+  justify-content:center;
 
 }
 
 &__transport-item {
   max-width:480px;
+  color:@gray-darkest;
+    font-family:@font-family;
+    font-size:@text-size;
+    font-weight: 400;
+    display:flex;
+    flex-wrap:wrap;
+  justify-content:center;
+
+   & ul {
+    list-style: none;
+   }
 }
 
 
@@ -18,6 +29,7 @@ flex-wrap:wrap;
   	font-family:@font-family-second;
   	font-size:@text-size-h2;
     text-align: center;
+    font-weight: 400;
 
   }
 
@@ -26,7 +38,27 @@ flex-wrap:wrap;
     color:@gray-darkest;
   	font-family:@font-family;
   	font-size:@text-size-sm;
+    text-align: center;
+    font-weight: bold;
 
+  }
+
+  &__transport--bus {
+
+    background-image: url("../../img/bus.png");
+    background-repeat: no-repeat;
+    width: 55px;
+    height: 30px;
+
+
+  }
+
+  &__transport--train {
+
+    background-image: url("../../img/train.png");
+    background-repeat: no-repeat;
+    width: 60px;
+    height: 30px;
   }
 }
 
@@ -37,13 +69,3 @@ flex-wrap:wrap;
 }
 
 
-@media screen and (max-width: @screen-lg) { //до 1200//
-
- 
-  .location__transport {flex-wrap:wrap;}
-  
-}
-
-@media screen and (min-width: @screen-lg) { //от1200//
-  
-}
