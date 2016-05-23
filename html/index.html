@@ -14,7 +14,7 @@
       <nav class="main-nav">
 	      <ul class="main-nav__list">
 		      <li class="main-nav__item"><a href="">Номера</a></li>
-		      <li class="main-nav__item"><a href="">Коттедж</a></li>
+		      <li class="main-nav__item main-nav__item--active"><a href="">Коттедж</a></li>
 		      <li class="main-nav__item"><a href="">Ресторан</a></li>
 		      <li class="main-nav__item"><a href="">Отдых</a></li>
 		      <li class="main-nav__item"><a href="">Контакты</a></li>
@@ -41,13 +41,15 @@
   	    </ul>
   	    <div class="rest-tabs__tabs-top">
   		    <div class="rest-tabs__top-item">
-  			    <div class="rest-tabs__top-item-inner">
-  				  <p class="rest-tabs__top-title">Семейный отдых на  берегу Финского залива
-                  </p>
-  				  <p class="rest-tabs__top-description">Green Valley - это 
+  			    <div class="rest-tabs__top-inner-text">
+  				    <p><span class="rest-tabs__top-title">Семейный отдых на  берегу<br>Финского залива
+                  </span>
+              </p>
+  				    <p><span class="rest-tabs__top-description">Green Valley - это 
               современная база отдыха
               в курортном районе для здорового отдыха всей семёй.
-                  </p>
+               </span>   
+              </p>
   			    </div>
   		    </div>
   	    <!--<div class="rest-tabs__top-item">
@@ -100,29 +102,34 @@
     </div>
     <section class="reviews">
       <h1 class="reviews__title">Отзывы</h1>
-      <div class="owl-carousel">
-        <img src="" alt="">
+      <div id="reviews" class="owl-carousel">
+        <div>
+          <blockquote class="reviews__item">
+  	        <cite class="reviews__autor">
+  	          <img class="reviews__img" src="" alt="">
+  	          <p class="reviews__name">Екатерина В.</p>
+  	          <div class="reviews__social">
+  	          <a href="" class="reviews__social--vk"></a>
+              </div>
+  	        </cite>
+  	        <p class="reviews__text">Наша семья счастлива, что открыла для себя Green Valley. Замечательный, комфортный отдых. Хорошее место, приветливый персонал, вкусная еда. Стали постоянными гостями!</p>
+  	        <p class="reviews__date">Дата отдыха:<br>01.06.2015 - 08.06.2015</p>
+  	      </blockquote>
+        </div>
+        <div>
+          <blockquote class="reviews__item">
+            <cite class="reviews__autor">
+              <img class="reviews__img" src="" alt="">
+              <p class="reviews__name">Екатерина В.</p>
+              <div class="reviews__social">
+              <a href="" class="reviews__social--fb"></a>
+              </div>
+            </cite>
+            <p class="reviews__text">Спасибо всем без исключения сотрудникам отеля за прекрасные дни, проведённые у вас! Наслаждались тишиной, отдохнули прекрасно. Понравилось всё: тёплый приём персоналом.</p>
+            <p class="reviews__date">Дата отдыха:<br>15.05.2015 - 20.05.2015</p>
+          </blockquote>
+        </div>
       </div>
-      <blockquote class="reviews__item">
-  	    <cite class="reviews__autor">
-  	      <img class="reviews__img" src="" alt="">
-  	      <p class="reviews__name">Екатерина В.</p>
-  	      <div class="reviews__social">
-  	      <a href="" class="reviews__social--vk"></a>
-  	    </cite>
-  	    <p class="reviews__text">Наша семья счастлива, что открыла для себя Green Valley. Замечательный, комфортный отдых. Хорошее место, приветливый персонал, вкусная еда. Стали постоянными гостями!</p>
-  	    <p class="reviews__date">Дата отдыха:<br>01.06.2015 - 08.06.2015</p>
-  	  </blockquote>
-      <blockquote class="reviews__item">
-        <cite class="reviews__autor">
-          <img class="reviews__img" src="" alt="">
-          <p class="reviews__name">Екатерина В.</p>
-          <div class="reviews__social">
-          <a href="" class="reviews__social--fb"></a>
-        </cite>
-        <p class="reviews__text">Спасибо всем без исключения сотрудникам отеля за прекрасные дни, проведённые у вас! Наслаждались тишиной, отдохнули прекрасно. Понравилось всё: тёплый приём персоналом.</p>
-        <p class="reviews__date">Дата отдыха:<br>15.05.2015 - 20.05.2015</p>
-      </blockquote>
       <a class="btn btn--white-bordered">Все отзывы
       </a>
     </section>   
@@ -208,5 +215,9 @@
       </p>
     </div>
   </footer>
-</body>
+
+  <script src="../js/jquery-2.2.3.min.js"></script>
+  <script src="../js/owl-carousel.min.js"></script>
+   <script src="../js/script.js"></script>
+  </body>
 </html>
