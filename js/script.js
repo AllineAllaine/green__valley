@@ -5,3 +5,17 @@ $(document).ready(function(){
   	nav: true
   });
 });
+
+$(document).ready(function(){
+$('#gallery').owlCarousel({
+  items: 4,
+  loop: true,
+  center: true
+});
+
+$('#gallery a').on('click', function(event){
+  event.preventDefault();
+  $('#gallery-main-img').attr('src', $(this).attr('href'));  
+  
+});
+});

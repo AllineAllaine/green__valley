@@ -62,6 +62,19 @@ a {
   height: 16px;
   display: inline-block;
 }
+.more {
+  font-family: 'Fira Sans', sans-serif;
+  color: #191919;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 500;
+  box-sizing: border-box;
+  text-transform: uppercase;
+  border-bottom: 3px dotted #191919;
+  display: inline-block;
+  border: none;
+  outline: none;
+}
 .page-header {
   border-bottom: 1px solid #ebebeb;
   padding: 20px 60px;
@@ -459,6 +472,12 @@ a {
   transform: rotate(-130deg);
   color: rgba(200, 54, 54, 0);
 }
+.booking section:nth-child(odd) {
+  background-color: #f1f1f1;
+}
+.booking-form__inner {
+  display: block;
+}
 .booking-form__main-title {
   font-family: 'PT Sans Caption', sans-serif;
   font-size: 30px;
@@ -490,17 +509,16 @@ a {
   text-align: center;
   text-transform: uppercase;
 }
-.booking-form__date-rest {
-  background-color: #f1f1f1;
-}
 .booking-form__inner-date {
   background-color: white;
-  display: flex;
+  display: inline-flex;
   flex-wrap: wrap;
   list-style: none;
   justify-content: center;
   margin: 0;
   padding: 0;
+  width: 380px;
+  height: 140px;
 }
 .booking-form__inner-date input {
   border: 1px solid #ebebeb;
@@ -733,12 +751,12 @@ a {
   background: #fafafa;
   display: flex;
   flex-wrap: wrap;
-  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
   margin-top: 10px;
 }
 @media and (min-width: 1200px) {
   .room-item {
-    flex-direction: row-reverse;
     flex-wrap: nowrap;
   }
 }
@@ -770,4 +788,7 @@ a {
 }
 .price span {
   color: #ff7435;
+}
+img {
+  max-width: 100%;
 }

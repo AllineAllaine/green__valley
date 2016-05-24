@@ -1,11 +1,19 @@
 .booking {
 
+	& section:nth-child(odd){
+
+		background-color: #f1f1f1;  
+	}
+
 }
 
 
 .booking-form {
 
 	&__inner {
+		display: block;
+		//justify-content:center;
+		//flex-wrap:wrap;
 
 	}
 
@@ -57,17 +65,19 @@
 	}
 
 	&__date-rest {
-		background-color: #f1f1f1;  
-	}
+		
+	}  
 
 	&__inner-date {
 		background-color: white;
-		display: flex;
+		display: inline-flex;
 		flex-wrap:wrap;
 		list-style: none;
 		justify-content:center;
 		margin:0;
 		padding:0;
+		width: 380px;
+		height: 140px;
         
         & li {
          //padding-right: 10px;
