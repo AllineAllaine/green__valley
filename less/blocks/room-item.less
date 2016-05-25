@@ -1,24 +1,49 @@
 .room-item{
 
+    @media (min-width: @screen-lg){
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    padding-bottom: 80px;
+}
 
-	background: @gray-lightest;
-	display: flex;
-    flex-wrap:wrap;
-   // flex-direction:row;
-   justify-content:flex-end;
-   align-items:center;
-   
-    margin-top: 10px;
+    width: 100%;
+    border: 1px solid #ebebeb;
+    background-color: @gray-lightest;
+    text-align: center;
+    padding: 35px 0;
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
 
-    @media and (min-width: @screen-lg) { //от 1200
-    //flex-direction:row-reverse;
-    flex-wrap:nowrap;
+
+	&__inner {
+        @media (min-width: @screen-lg){
+    width: 50%;
+}
     }
 
     &__img-inner {
-    	max-width: 580px;
-    	max-height: 300px;
-    	background: @gray-lightest;
+    
+    @media (min-width: @screen-lg) {
+    width: 50%;
+    margin: 0;
+    position: absolute;
+    top: 0;
+    right: 0;
+    }
+
+    display: inline-block;  
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    margin-top: 30px;
+
+    & img {
+    width: 100%;
+    height: 100%;
+    }
+    
     	
     }
 
@@ -30,16 +55,57 @@
     	line-height: 19px;
     	vertical-align: middle;
     	color:@gray-darkest;
+        margin: 0;
+
+        @media (min-width: @screen-sm) {
+        font-size: @text-size-h2;
+}
 	}
 
 	&__text {
 
-    	font-family: @font-family;
-    	font-size: @text-size;
-    	line-height: 22px;
-    	vertical-align: middle;
-    	color:@gray-darkest;
+    @media (min-width: @screen-lg){
+    width: 65%;
+    }
+   @media (min-width: @screen-sm){
+    width: 55%;
+   }
+
+    width: 90%;
+    display: inline-block;
+    text-align: left;
+    margin-top: 25px;
+    margin-bottom: 35px;
+
+    & p {
+    margin: 0;
+    }
+
+    
+    	
 	}
+
+    &__btns {
+        @media (min-width: @screen-sm){
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+    
+    display: flex;
+    flex-direction: column;
+
+    }
+
+    &__btn-wrapper {
+
+    @media (min-width: @screen-sm){
+    margin-right: 40px;
+    }
+
+    margin-bottom: 20px;
+    }
 
 
 }
