@@ -58,17 +58,26 @@
           </div>
         </section>	
         <section class="booking-form__place-type">
-	        <div class="booking-form__inner">
+	        <div class="booking-form__place-inner">
 		        <p class="step-form">Шаг 2</p>
 		        <h2 class="booking-form__title">Место проживания
             </h2>
-		        <div class="radio">
-            <input type="radio" value="hotel" name="place-type">  
-            </input>
+		        <div class="booking-form__place-radio">
+              <ul class="booking-form__place-list">
+                <li class="booking-form__place-item">
+                  <label for="">
+                    <input type="radio" name="place-type" id="hotel" checked="checked">
+                    <span class="booking-form__place-hotel">отель</span>
+                  </label>
+                </li>
+                <li class="booking-form__place-item">
+                  <label for="">
+                    <input type="radio" name="place-type" id="cottage">
+                    <span class="booking-form__place-cottage">коттедж</span>
+                  </label>
+                </li>
+              </ul>
             </div>
-	          <input type="radio" value="cottage" name="place-type"> 
-            </input>
-	        </div>
         </section>
         <section class="booking-form__cottage-type">
 	        <div class="booking-form__inner">

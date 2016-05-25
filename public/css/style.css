@@ -12,6 +12,89 @@ body {
 a {
   text-decoration: none;
 }
+@at-root {
+  @-ms-viewport {
+    width: device-width;
+  }
+}
+[tabindex='-1']:focus {
+  outline: none !important;
+}
+[role='button'] {
+  cursor: pointer;
+}
+a,
+area,
+button,
+[role='button'],
+input,
+label,
+select,
+summary,
+textarea {
+  touch-action: manipulation;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+html {
+  box-sizing: border-box;
+  font-size: 8px;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -ms-overflow-style: scrollbar;
+  -ms-text-size-adjust: 100%;
+  min-width: 320px;
+  min-height: 100%;
+  site: be cool;
+}
+@media (min-width: 480px) {
+  html {
+    font-size: 10px;
+  }
+}
+body {
+  font-family: 'Fira Sans', sans-serif;
+  font-size: 16px;
+  color: #191919;
+  background-color: ;
+  margin: 0;
+  min-height: 100%;
+}
+a {
+  color: #191919;
+  text-decoration: none;
+  background-color: transparent;
+}
+a:hover,
+a:focus {
+  color: #ff7435;
+  text-decoration: underline;
+}
+img {
+  max-width: 100%;
+  height: auto;
+  border: 0;
+}
+h1 {
+  font-size: 36px;
+}
+h2 {
+  font-size: 30px;
+}
+h3 {
+  font-size: 26px;
+}
+h1,
+h2 {
+  font-family: 'PT Serif Caption', serif;
+  font-weight: 400;
+}
+h3 {
+  font-family: 'Fira Sans', sans-serif;
+  font-weight: 500;
+}
 .btn {
   background: #ff7435;
   border-radius: 70px;
@@ -163,10 +246,7 @@ a {
 }
 .main-nav__item a {
   text-decoration: none;
-  color: #191919;
   font-size: 14px;
-  font-family: 'Fira Sans', sans-serif;
-  font-weight: 500;
   line-height: 72px;
 }
 .main-nav__item a:hover {
@@ -439,9 +519,12 @@ a {
   background-image: url("../../img/background-reviews.png");
   background-repeat: no-repeat;
   background-size: cover;
+}
+.reviews reviews__gallery {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+  flex-direction: column;
 }
 .reviews__title {
   font-family: 'PT Serif Caption', serif;
@@ -454,7 +537,9 @@ a {
   background-color: white;
   margin: 10px;
   max-width: 480px;
-  min-width: 320px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 .owl-prev {
   border-bottom: 2px solid white;
@@ -475,8 +560,10 @@ a {
 .booking section:nth-child(odd) {
   background-color: #f1f1f1;
 }
-.booking-form__inner {
-  display: block;
+@media screen and (min-width: 1200px) {
+  .booking-form__inner {
+    padding-bottom: 100px;
+  }
 }
 .booking-form__main-title {
   font-family: 'PT Sans Caption', sans-serif;
@@ -490,6 +577,8 @@ a {
   line-height: 19px;
   color: #191919;
   text-align: center;
+  padding-bottom: 30px;
+  font-weight: 300px;
 }
 .booking-form__desc {
   font-family: 'Fira Sans', sans-serif;
@@ -510,25 +599,111 @@ a {
   text-transform: uppercase;
 }
 .booking-form__inner-date {
-  background-color: white;
-  display: inline-flex;
-  flex-wrap: wrap;
+  width: 180px;
   list-style: none;
-  justify-content: center;
-  margin: 0;
   padding: 0;
-  width: 380px;
-  height: 140px;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  justify-content: center;
+}
+@media screen and (min-width: 768px) {
+  .booking-form__inner-date {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 auto;
+    width: 380px;
+    height: 140px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .booking-form__inner-date {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 auto;
+    width: 380px;
+    height: 140px;
+    background-color: white;
+    border: 1px solid #ebebeb;
+    padding: 15px 0;
+  }
+}
+.booking-form__inner-date li {
+  font-size: 0;
+  display: block;
+  padding-bottom: 35px;
 }
 .booking-form__inner-date input {
   border: 1px solid #ebebeb;
-  width: 55px;
+  width: 53px;
   height: 48px;
   text-align: center;
   text-transform: uppercase;
-  font-family: ;
-  color: ;
+  font-family: 'Fira Sans', sans-serif;
+  color: #0ab89d;
+}
+.booking-form__inner-date label {
+  font-size: 14px;
+  line-height: 18px;
+  font-family: 'Fira Sans', sans-serif;
+  font-weight: 300;
+  color: #191919;
+  display: inline-block;
+  cursor: pointer;
+  margin-bottom: 15px;
+  text-align: center;
+}
+.booking-form__place-radio {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 20px 50px;
+  margin: 0 auto;
+}
+.booking-form__place-list {
+  width: 100%;
+  display: inline-block;
+  border: 1px solid #ebebeb;
+  font-size: 0;
+  padding: 25px 0 48px;
+  max-width: 380px;
+  margin: 0 auto;
+  list-style: none;
+}
+.booking-form__place-item {
+  display: inline-block;
+  width: 50%;
   margin: 0;
+  text-transform: uppercase;
+}
+.booking-form__place-item label {
+  padding-bottom: 73px;
+  position: relative;
+  font-size: 14px;
+  line-height: 18px;
+  font-family: 'Fira Sans', sans-serif;
+  font-weight: 300;
+  color: #191919;
+  display: inline-block;
+  cursor: pointer;
+  margin-bottom: 15px;
+  text-align: center;
+}
+.booking-form__place-item input {
+  display: none;
+  outline: 0;
+  font-size: 14px;
+  line-height: 18px;
+  font-family: 'Fira Sans', sans-serif;
+  text-transform: uppercase;
+  color: #0ab89d;
+  border: 1px solid #ebebeb;
+  font-weight: 500;
+  padding: 16px;
+  text-align: center;
+  background-color: #fff;
 }
 .step-form {
   font-family: 'Fira Sans', sans-serif;

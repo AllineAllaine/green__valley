@@ -15,7 +15,15 @@ $('#gallery').owlCarousel({
 
 $('#gallery a').on('click', function(event){
   event.preventDefault();
-  $('#gallery-main-img').attr('src', $(this).attr('href'));  
+  $('#gallery-main div').addClass('actived');  
   
 });
+});
+$(document).ready(function(){
+$('#gallery-main').owlCarousel({
+  items: 4,
+  loop: true,
+  center: true
+});
+  
 });
