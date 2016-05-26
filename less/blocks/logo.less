@@ -1,3 +1,25 @@
 .logo {
-	padding: 17px 20px 25px 50px;
+	//padding: 17px 20px 25px 50px;
+
+	&__inner {
+
+    text-align: center;
+    width: 67%;
+    margin-left: 17%;
+    display: inline-block;
+    margin-right: -1px;
+
+	@media (min-width: @screen-lg) {
+    text-align: left;
+    margin-left: 0%;
+    width: 17%;
+     }
+@media (min-width: @screen-sm) {
+    margin-left: 8%;
+    width: 83%;
+    }
+
+    
+   }
+
 }

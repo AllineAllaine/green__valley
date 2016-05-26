@@ -161,32 +161,37 @@ h3 {
   font-weight: 500;
   box-sizing: border-box;
   text-transform: uppercase;
-  border-bottom: 3px dotted #191919;
+  border-bottom: 1px dashed #191919;
   display: inline-block;
-  border: none;
-  outline: none;
 }
 .page-header {
   border-bottom: 1px solid #ebebeb;
-  padding: 20px 60px;
-  max-width: 1200px;
 }
 .page-header__inner {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  margin-right: auto;
-  margin-left: auto;
+  margin-right: 0;
   align-items: center;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding: 0 25px;
+}
+@media (min-width: 1200px) {
+  .page-header__inner {
+    width: 1180px !important;
+    margin-left: auto !important;
+  }
+}
+@media (min-width: 768px) {
+  .page-header__inner {
+    width: 768px;
+  }
 }
 .page-header__contacts {
-  display: block;
+  display: none;
 }
-@media screen and (max-width: 1200px) {
+@media screen and (min-width: 1200px) {
   .page-header__contacts {
-    display: none;
+    display: inline-block;
   }
 }
 .page-header__contacts a {
@@ -202,11 +207,11 @@ h3 {
   font-family: 'Fira Sans', sans-serif;
 }
 .page-header__btn {
-  display: block;
+  display: none;
 }
-@media screen and (max-width: 1200px) {
+@media screen and (min-width: 1200px) {
   .page-header__btn {
-    display: none;
+    display: inline-block !important;
   }
 }
 .page-footer {
@@ -238,37 +243,44 @@ h3 {
 .social {
   list-style: none;
 }
-@media screen and (max-width: 1200px) {
+.main-nav {
+  display: none;
+}
+@media screen and (min-width: 1200px) {
   .main-nav {
-    display: none;
+    display: inline-block;
   }
 }
 .main-nav__item {
   display: inline-block;
-  text-transform: uppercase;
-  padding-right: 10px;
+  padding: 0;
+  margin: 0;
 }
 .main-nav__list {
   padding: 0;
+  margin: 0;
   list-style: none;
+}
+.main-nav__item a:first-child {
+  padding-left: 0;
 }
 .main-nav__item a {
   text-decoration: none;
   font-size: 14px;
   line-height: 72px;
+  text-transform: uppercase;
+  cursor: pointer;
+  font-weight: 300;
+  padding: 0 6px;
 }
 .main-nav__item a:hover {
   color: #ff7435;
 }
 .main-nav__burger {
-  background: url(../../img/burger.png) no-repeat 0 0;
+  background: url("../../img/burger.png") no-repeat 0 0;
   width: 30px;
   height: 20px;
-}
-@media screen and (min-width: 1200px) {
-  .main-nav__burger {
-    display: none;
-  }
+  display: inline-block;
 }
 @media screen and (min-width: 1200px) {
   .main-nav__burger {
@@ -930,6 +942,61 @@ h3 {
   position: relative;
   z-index: 1;
 }
+.room-types__promo {
+  padding: 40px 0;
+  margin-bottom: 45px;
+  text-align: center;
+  min-height: 200px;
+  background-image: url(../../img/promo-room-bg.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 20% 80%;
+  background-attachment: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media (min-width: 768px) {
+  .room-types__promo {
+    display: block;
+  }
+}
+.room-types__title {
+  font-size: 26px;
+  font-family: 'PT Serif Caption', serif;
+  font-weight: 300;
+  display: inline-block;
+  color: white;
+}
+.room-types__description {
+  display: none;
+  font-size: 18px;
+  line-height: 24px;
+  font-family: 'Fira Sans', sans-serif;
+  font-weight: 300;
+  color: white;
+}
+@media (min-width: 768px) {
+  .room-types__description {
+    display: block;
+  }
+}
+.room-types__description p {
+  margin: 0;
+}
+.room-types__inner {
+  margin-right: auto;
+  margin-left: auto;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+}
+@media (min-width: 1200px) {
+  .room-types__inner {
+    width: 1180px;
+  }
+}
 .room-item {
   width: 100%;
   border: 1px solid #ebebeb;
@@ -1025,6 +1092,18 @@ h3 {
     margin-right: 40px;
   }
 }
+.room-item__tit {
+  font-size: 26px;
+  font-family: 'PT Serif Caption', serif;
+  font-weight: 400;
+  text-align: center;
+  margin-bottom: 35px;
+}
+@media (min-width: 768px) {
+  .room-item__tit {
+    font-size: 30px;
+  }
+}
 .price {
   font-family: 'Fira Sans', sans-serif;
   font-size: 16px;
@@ -1037,4 +1116,22 @@ h3 {
 }
 img {
   max-width: 100%;
+}
+.nav-hidden {
+  display: none;
+}
+.nav-hidden__list {
+  list-style: none;
+  text-align: center;
+  padding: 0;
+}
+.nav-hidden__item {
+  display: list-item;
+  padding: 14px 0;
+  border-bottom: 1px solid #ebebeb;
+}
+.nav-hidden__link {
+  line-height: 18px;
+  font-weight: 300;
+  text-transform: uppercase;
 }
